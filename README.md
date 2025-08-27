@@ -196,7 +196,7 @@ cd ..
 | speechenhan | 84.5 | 200 |
 | speechsepar | 15.5 | 200 |
 
-![[violin_full 1.png]]
+![violin_full 1](violin_full%201.png)
 
 ##### 归一化（峰值和 峰值响度归一化）voice_gen/post_deal_voicedata-Copy1.ipynb 执行全部
 得到
@@ -217,8 +217,8 @@ short_audio_kwargs = {
 然后通过 生成多个输出后，使用确认说话人比较相似度，获取最高的合并在一起，由于是在最后一天才写相似度方面，所以并没有总结调参策略
 
 复现就是，逐个按下面调参修改，修改一下位置为
-![[code2.png]]
-![[code1.png]]
+![code2](code2.png)
+![code1](code1.png)
 
 ```python
 #1
@@ -365,7 +365,7 @@ zip -r result.zip result
 ```
 好了 完成了
 
-给出对比图![[ranking_bar_full.png]]![[ranking_heatmap_full.png]]![[violin_full.png]]
+给出对比图![ranking_bar_full](ranking_bar_full.png)![ranking_heatmap_full](ranking_heatmap_full.png)![violin_full](violin_full.png)
 
 ###### 复盘
 第一次参加这种比赛，没有设计好实践规划，导致最后一天才匆忙写说话人确认部分比对方面，之前想的方案是：寻找ClearerVoice-Studio和index-tts内部文件是否有类似方法提供后无果搁置了。再加上中途出现了些bug，使得比对只比对了一对音频的结果就提交了。
